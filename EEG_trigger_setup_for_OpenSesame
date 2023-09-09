@@ -1,0 +1,47 @@
+
+# This script is used to set up the system for sending triggers to the 
+# EEG collection software (e.g., Brain Vision Recorder). The script is 
+# formed of a Prepare phase and a Run phase. The code is partially 
+# based on a tutorial by Kate Stone, available at 
+# https://stonekate.github.io/blog/opensesame
+
+# The purpose of each trigger is described in README.txt.
+
+import serial
+import serial.tools.list_ports
+import time
+
+# set test mode to yes or no 
+var.test_mode = "no" 
+
+# If we are not in test mode...
+if(var.test_mode == "no"):
+
+    # Use the first available port 
+    available_port = serial.tools.list_ports.comports()[0].device
+    serialport = serial.Serial(available_port)
+    
+    # Send triggers to the port
+    def send_trigger(trigger):
+        serialport.write(trigger.to_bytes(length = 1, byteorder = 'big'))
+        time.sleep(0.01) # separation from next trigger (see Brain Vision Recorder manual)
+        serialport.write(int(0).to_bytes(length = 1, byteorder = 'big')) # reset port
+        return;
+    
+# When in test mode, show warning at the beginning of the experiment.
+else:
+    test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
+    test_canvas.text("The experiment is running in test mode.<br/><br/>No triggers will be sent.<br/><br/>(change test_mode in trigger_setup).");
+    test_canvas.show();
+    my_keyboard = Keyboard();
+    key, end_time = my_keyboard.get_key();
+    
+    # In the `send_trigger` function, only print the triggers
+    def send_trigger(trigger):
+        print(trigger)
+        time.sleep(0.01) # separation from next trigger (see Brain Vision Recorder manual)
+        print(0)
+        return;
+    
+# Reset EEG port to 0 at the beginning of the experiment
+send_trigger(0)
