@@ -1,11 +1,15 @@
 
 # This script is used to set up the system for sending triggers to the 
-# EEG collection software (e.g., Brain Vision Recorder). The script is 
-# formed of a Prepare phase and a Run phase. The code is partially 
-# based on a tutorial by Kate Stone, available at 
-# https://stonekate.github.io/blog/opensesame
+# EEG collection software (e.g., Brain Vision Recorder). The code is 
+# in part based on a tutorial by Kate Stone, available at 
+# https://stonekate.github.io/blog/opensesame, and on an answer 
+# on StackOverflow by user 'quamrana', available at 
+# https://stackoverflow.com/a/76829646/7050882. 
+# 
+# The code defines the function `send_trigger`, which should then 
+# be used in inline scripts, as in the following example: 
+# `send_trigger(1)`
 
-# The purpose of each trigger is described in README.txt.
 
 import serial
 import serial.tools.list_ports
