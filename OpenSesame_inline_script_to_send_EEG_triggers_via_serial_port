@@ -46,5 +46,5 @@ else:
         print(0)
         return;
     
-# Reset EEG port to 0 at the beginning of the experiment
+# Reset EEG port at the beginning of the experiment
 send_trigger(0)
