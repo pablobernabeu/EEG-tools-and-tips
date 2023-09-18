@@ -31,7 +31,7 @@ if(var.test_mode == "no"):
         serialport.write(int(0).to_bytes(length = 1, byteorder = 'big')) # reset port
         return;
     
-# When in test mode, show warning at the beginning of the experiment.
+# When in test mode, show warning at the beginning of the experiment
 else:
     test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
     test_canvas.text("The experiment is running in test mode.<br/><br/>No triggers will be sent.<br/><br/>(change test_mode in trigger_setup).");
