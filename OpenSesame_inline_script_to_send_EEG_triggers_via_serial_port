@@ -10,7 +10,7 @@
 var.test_mode = "no" 
 
 
-#############################################
+################################################
 
 # The code defines the function `send_trigger`, which should then 
 # be used in inline scripts, as in the following example:
