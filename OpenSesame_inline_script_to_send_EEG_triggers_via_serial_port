@@ -5,18 +5,20 @@
 # https://stonekate.github.io/blog/opensesame, and on an answer 
 # on StackOverflow by user 'quamrana', available at 
 # https://stackoverflow.com/a/76829646/7050882. 
-# 
-# The code defines the function `send_trigger`, which should then 
-# be used in inline scripts, as in the following example: 
-# `send_trigger(1)`
 
+# Set test mode to yes or no here, not under the horizontal bar.
+var.test_mode = "no" 
+
+
+#############################################
+
+# The code defines the function `send_trigger`, which should then 
+# be used in inline scripts, as in the following example:
+# `send_trigger(1)`
 
 import serial
 import serial.tools.list_ports
 import time
-
-# set test mode to yes or no 
-var.test_mode = "no" 
 
 # If we are not in test mode...
 if(var.test_mode == "no"):
