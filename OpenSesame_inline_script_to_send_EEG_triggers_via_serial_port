@@ -12,9 +12,8 @@ var.test_mode = "no"
 
 ################################################
 
-# The code defines the function `send_trigger`, which should then 
-# be used in inline scripts, as in the following example:
-# `send_trigger(1)`
+# Define `send_trigger` function, which should be used in inline 
+# scripts as in the following example: `send_trigger(1)`
 
 import serial
 import serial.tools.list_ports
