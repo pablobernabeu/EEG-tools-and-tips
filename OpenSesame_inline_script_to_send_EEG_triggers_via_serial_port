@@ -36,13 +36,15 @@ if(var.test_mode == "no"):
         serialport.write(int(0).to_bytes(length = 1, byteorder = 'big')) # reset port
         return;
     
-# When in test mode, show warning at the beginning of the experiment
+# When in test mode, show warning at the beginning of the experiment. 
+# To continue, the space bar must be pressed twice. 
 else:
     test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
-    test_canvas.text("<div style='line-height:200%; margin-right:150px; margin-left:150px; text-align:left;'>WARNING. No triggers will be sent, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Please check these constraints if necessary.</div>");
+    test_canvas.text("<div style='line-height:200%; margin-right:150px; margin-left:150px; text-align:left;'>WARNING. No triggers will be sent, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. If necessary, press ESC to terminate the session. Otherwise, press C twice to continue.</div>");
     test_canvas.show();
     my_keyboard = Keyboard();
-    key, end_time = my_keyboard.get_key();
+    key, end_time = my_keyboard.get_key(keylist=['c']);
+    key, end_time = my_keyboard.get_key(keylist=['c']);
     
     # In the `send_trigger` function, only print the triggers
     def send_trigger(trigger):
