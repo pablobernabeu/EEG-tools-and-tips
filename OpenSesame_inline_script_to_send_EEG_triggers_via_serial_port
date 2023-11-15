@@ -5,6 +5,8 @@
 # https://stonekate.github.io/blog/opensesame, and on an answer 
 # on StackOverflow by user 'quamrana', available at 
 # https://stackoverflow.com/a/76829646/7050882. 
+# The rest is based on pyserial:
+# https://pyserial.readthedocs.io/en/latest/pyserial_api.html
 
 # Set test mode to yes or no here, not under the horizontal bar.
 var.test_mode = 'no' 
