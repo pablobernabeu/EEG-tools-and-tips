@@ -1,12 +1,21 @@
 
 # This script is used to set up the system for sending triggers to the 
-# EEG recording software (e.g., BrainVision Recorder). The code is 
-# in part based on a tutorial by Kate Stone, available at 
+# EEG recording software (e.g., BrainVision Recorder). The code 
+# automatically looks for an available serial port at the beginning 
+# of the session. If there are any available ports, a connection is 
+# established to the first port in the list. If there are no available 
+# ports, no connection is established, and a warning is shown on 
+# the screen, informing the user that no triggers will be sent to the 
+# EEG recorder.
+# 
+# The code is in part based on a tutorial by Kate Stone, available at 
 # https://stonekate.github.io/blog/opensesame, and on an answer 
 # on StackOverflow by user 'quamrana', available at 
 # https://stackoverflow.com/a/76829646/7050882. 
 # The rest is based on pyserial:
 # https://pyserial.readthedocs.io/en/latest/pyserial_api.html
+
+# This script 
 
 # Set test mode to yes or no here, not under the horizontal bar.
 var.test_mode = 'no' 
