@@ -55,7 +55,7 @@ if(var.test_mode == 'no'):
 # To continue, the letter C must be pressed twice. 
 else:
     test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
-    test_canvas.text('<div style="line-height:200%; margin-right:150px; margin-left:150px; text-align:left;">WARNING. No triggers will be sent, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press ESC to terminate the session, or press C twice to continue.</div>');
+    test_canvas.text('<div style="line-height:200%; margin-right:150px; margin-left:150px; text-align:left;">WARNING. Triggers cannot be sent to the EEG recorder, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press <b>Esc</b> to quit the session, or press <b>C</b> twice to continue. If you continue, the triggers will only be printed in the OpenSesame console.</div>');
     test_canvas.show();
     my_keyboard = Keyboard();
     key, end_time = my_keyboard.get_key(keylist=['c']);
