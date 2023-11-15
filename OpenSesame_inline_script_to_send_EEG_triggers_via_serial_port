@@ -32,7 +32,7 @@ if(var.test_mode == 'no'):
     # Send triggers to the port
     def send_trigger(trigger):
         serialport.write(trigger.to_bytes(length = 1, byteorder = 'big'))
-        time.sleep(0.01) # 10 ms separation from next trigger (see manual of Brain Vision Recorder)
+        time.sleep(0.01) # 10 ms separation from next trigger (see manual of BrainVision Recorder)
         serialport.write(int(0).to_bytes(length = 1, byteorder = 'big')) # reset port
         return;
     
