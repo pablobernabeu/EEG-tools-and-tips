@@ -1,13 +1,13 @@
 
 # This script is used to set up the system for sending triggers to the 
-# EEG collection software (e.g., Brain Vision Recorder). The code is 
+# EEG recording software (e.g., BrainVision Recorder). The code is 
 # in part based on a tutorial by Kate Stone, available at 
 # https://stonekate.github.io/blog/opensesame, and on an answer 
 # on StackOverflow by user 'quamrana', available at 
 # https://stackoverflow.com/a/76829646/7050882. 
 
 # Set test mode to yes or no here, not under the horizontal bar.
-var.test_mode = "no" 
+var.test_mode = 'no' 
 
 
 ################################################
@@ -18,13 +18,13 @@ import time
 
 # If no serial ports are available, activate test mode
 if serial.tools.list_ports.comports() == []:
-    var.test_mode = "yes" 
+    var.test_mode = 'yes' 
 
 # Define `send_trigger` function, which should be used in inline 
 # scripts as in the following example: `send_trigger(1)`
 
 # If we are not in test mode...
-if(var.test_mode == "no"):
+if(var.test_mode == 'no'):
 
     # Open the first serial port available
     serialport = serial.Serial(serial.tools.list_ports.comports()[0].device)
@@ -40,7 +40,7 @@ if(var.test_mode == "no"):
 # To continue, the space bar must be pressed twice. 
 else:
     test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
-    test_canvas.text("<div style='line-height:200%; margin-right:150px; margin-left:150px; text-align:left;'>WARNING. No triggers will be sent, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press ESC to terminate the session, or press C twice to continue.</div>");
+    test_canvas.text('<div style="line-height:200%; margin-right:150px; margin-left:150px; text-align:left;">WARNING. No triggers will be sent, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press ESC to terminate the session, or press C twice to continue.</div>');
     test_canvas.show();
     my_keyboard = Keyboard();
     key, end_time = my_keyboard.get_key(keylist=['c']);
