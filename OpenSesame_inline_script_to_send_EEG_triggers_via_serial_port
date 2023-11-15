@@ -6,7 +6,8 @@
 # established to the first port in the list. If there are no available 
 # ports, no connection is established, and a warning is shown on 
 # the screen, informing the user that no triggers will be sent to the 
-# EEG recorder.
+# EEG recorder. In the latter case, the triggers are only printed in 
+# the OpenSesame console.
 # 
 # The code is in part based on a tutorial by Kate Stone, available at 
 # https://stonekate.github.io/blog/opensesame, and on an answer 
@@ -15,13 +16,16 @@
 # The rest is based on pyserial:
 # https://pyserial.readthedocs.io/en/latest/pyserial_api.html
 
-# This script 
 
-# Set test mode to yes or no here, not under the horizontal bar.
+# For development purposes, the test mode can be set to 'yes' 
+# below, which will prevent attempting to connect to a port. As 
+# a result, no EEG triggers will be sent to the EEG recorder, and 
+# instead the triggers will be printed in the OpenSesame console.
+
 var.test_mode = 'no' 
 
 
-################################################
+#_______________________________________________________________
 
 import serial
 import serial.tools.list_ports
