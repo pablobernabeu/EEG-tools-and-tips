@@ -7,7 +7,7 @@
 # ports, no connection is established, and a warning is shown on 
 # the screen, informing the user that no triggers will be sent to the 
 # EEG recorder. In the latter case, the triggers are only printed in 
-# the OpenSesame console.
+# the Python console of OpenSesame.
 # 
 # The code is in part based on a tutorial by Kate Stone, available at 
 # https://stonekate.github.io/blog/opensesame, and on an answer 
@@ -20,7 +20,8 @@
 # For development purposes, the test mode can be set to 'yes' 
 # below, which will prevent attempting to connect to a port. As 
 # a result, no EEG triggers will be sent to the EEG recorder, and 
-# instead the triggers will be printed in the OpenSesame console.
+# instead the triggers will be printed in the Python console of 
+# OpenSesame.
 
 var.test_mode = 'no' 
 
@@ -55,7 +56,7 @@ if(var.test_mode == 'no'):
 # To continue, the letter C must be pressed twice. 
 else:
     test_canvas = Canvas(color = 'red', font_size = 38, font_family = 'sans');
-    test_canvas.text('<div style="line-height:200%; margin-right:150px; margin-left:150px; text-align:left;">WARNING. Triggers cannot be sent to the EEG recorder, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press <b>Esc</b> to quit the session, or press <b>C</b> twice to continue. If you continue, the triggers will only be printed in the OpenSesame console.</div>');
+    test_canvas.text('<div style="line-height:200%; margin-right:150px; margin-left:150px; text-align:left;">WARNING. Triggers cannot be sent to the EEG recorder, either because <tt>test_mode</tt> is activated in the trigger-setup script, or because no serial ports are available. Press <b>Esc</b> to quit the session, or press <b>C</b> twice to continue. If you continue, the triggers will only be printed in the Python console of OpenSesame.</div>');
     test_canvas.show();
     my_keyboard = Keyboard();
     key, end_time = my_keyboard.get_key(keylist=['c']);
