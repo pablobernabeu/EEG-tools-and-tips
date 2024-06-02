@@ -1,6 +1,4 @@
-# EEG-tools-and-tips
-
-Some tools and tips for electroencephalography 
+# Some tools and tips for electroencephalography
 
 - [Preventing muscle artifacts in electroencephalography sessions](https://pablobernabeu.github.io/2024/preventing-muscle-artifacts-in-electroencephalography-sessions/)
 
