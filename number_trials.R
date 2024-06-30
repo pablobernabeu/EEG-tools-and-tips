@@ -20,7 +20,6 @@ number_trials =
       ordinal_number = ordinal_number + 1
     }
     
-    # Write the modified lines back to a file
-    output_file_path = paste0(file_without_extension, '_temp.vmrk')
-    writeLines(file, output_file_path)
+    # Return result
+    return(file)
   }
