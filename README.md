@@ -12,13 +12,19 @@
 
 - [Event-related potentials: Why and how I used them](https://pablobernabeu.github.io/2020/event-related-potentials-why-and-how-i-used-them/)
 
+  <br>
+
 ## Wrong and right placement of the splitter box on the participant's back
 
 ![](https://github.com/pablobernabeu/EEG-tools-and-tips/blob/main/position%20of%20cables.png)
 
+  <br>
+
 ## Fixing the peg in the splitter box
 
 ![](https://github.com/pablobernabeu/EEG-tools-and-tips/blob/main/splitter%20peg.png)
+
+  <br>
 
 ## Setting the workspace in BrainVision Recorder
 
