@@ -15,5 +15,5 @@ count_markers =
     
     # Count and print result
     marker_count = sum(str_detect(file, 'S  2'))
-    cat('Count of "', marker, '": ', marker_count, '\n', sep = '')
+    cat('Count of "', marker, '": ', marker_count, ' instances\n', sep = '')
   }
