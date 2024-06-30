@@ -12,8 +12,6 @@
 
 ![](https://github.com/pablobernabeu/EEG-tools-and-tips/blob/main/Workspace%20issue%20in%20BrainVision%20Recorder.png)
 
-##
-
 ## Articles
 
 - [Preventing muscle artifacts in electroencephalography sessions](https://pablobernabeu.github.io/2024/preventing-muscle-artifacts-in-electroencephalography-sessions/)
