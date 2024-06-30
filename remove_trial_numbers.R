@@ -4,14 +4,13 @@
 
 remove_trial_numbers = 
   
-  function(temp_file_without_extension) {
+  function(file) {
     
     require(dplyr)
     require(stringr)
     
     # Read the file into a vector of lines
-    file_path = paste0(temp_file_without_extension, '.vmrk')
-    file = readLines(file_path)
+    file = readLines(paste0(file, '.vmrk'))
     
     # Remove trial numbers
     file = file %>% str_replace_all(',0  .*', ',0')
