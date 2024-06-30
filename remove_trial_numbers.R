@@ -16,7 +16,6 @@ remove_trial_numbers =
     # Remove trial numbers
     file = file %>% str_replace_all(',0  .*', ',0')
     
-    # Write the modified lines back to a file
-    output_file_path = paste0(temp_file_without_extension, '.vmrk')
-    writeLines(file, output_file_path)
+    # Return result
+    return(file)
   }
