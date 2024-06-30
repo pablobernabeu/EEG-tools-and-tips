@@ -2,6 +2,8 @@
 
 ## Articles
 
+- [R functions for checking and fixing vmrk files from BrainVision](https://pablobernabeu.github.io/2024/r-functions-for-checking-and-fixing-vmrk-files-from-brainvision/)
+
 - [Preventing muscle artifacts in electroencephalography sessions](https://pablobernabeu.github.io/2024/preventing-muscle-artifacts-in-electroencephalography-sessions/)
 
 - [An inline script for OpenSesame to send EEG triggers via serial port](https://pablobernabeu.github.io/2023/an-inline-script-for-opensesame-to-send-eeg-triggers-via-serial-port/)
