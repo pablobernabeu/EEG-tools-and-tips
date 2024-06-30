@@ -7,7 +7,7 @@ number_trials =
   function(file, start_line, lines_per_trial, first_number) {
     
     # Read the file into a vector of lines
-    file = readLines(paste0(file, '.vmrk'))
+    file = readLines(file)
     
     # Initialize the ordinal number counter
     ordinal_number = first_number
