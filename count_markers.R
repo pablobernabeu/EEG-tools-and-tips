@@ -10,7 +10,7 @@ count_markers =
     require(stringr)
     
     # Read the file into a vector of lines
-    file = readLines(paste0(file_without_extension, '.vmrk'))
+    file = readLines(file)
     
     # Count and print result
     marker_count = sum(str_detect(file, 'S  2'))
