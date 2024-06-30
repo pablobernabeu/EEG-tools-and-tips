@@ -1,0 +1,56 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+
+[Common Infos]
+DataFile=3.eeg
+Codepage=utf-8
+
+[Marker Infos]
+; Each entry: Mk<Marker number>=<Type>,<Description>,<Position in data points>,
+; <Size in data points>, <Channel number (0 = marker is related to all channels)>,
+; <Date (YYYYMMDDhhmmssuuuuuu)>
+; Fields are delimited by commas, some fields might be omited (empty).
+; Commas in type or description text are coded as "\1".
+Mk1=New Segment,,1,1,0,20240318111955090000
+Mk2=Stimulus,S254,20419,1,0
+Mk3=Stimulus,S  5,22332,1,0
+Mk4=Stimulus,S 42,23095,1,0
+Mk5=Stimulus,S143,23100,1,0
+Mk6=Stimulus,S  2,23106,1,0
+Mk7=Stimulus,S102,23111,1,0
+Mk8=Stimulus,S  6,25882,1,0
+Mk9=Stimulus,S  5,28106,1,0
+Mk10=Stimulus,S 50,29053,1,0
+Mk11=Stimulus,S241,29058,1,0
+Mk12=Stimulus,S  1,29063,1,0
+Mk13=Stimulus,S101,29069,1,0
+Mk14=Stimulus,S  6,31830,1,0
+Mk15=Stimulus,S  5,34056,1,0
+Mk16=Stimulus,S 49,35055,1,0
+Mk17=Stimulus,S226,35060,1,0
+Mk18=Stimulus,S  2,35066,1,0
+Mk19=Stimulus,S103,35071,1,0
+Mk20=Stimulus,S  6,37242,1,0
+Mk21=Stimulus,S  5,39436,1,0
+Mk22=Stimulus,S 43,40417,1,0
+Mk23=Stimulus,S155,40423,1,0
+Mk24=Stimulus,S  2,40429,1,0
+Mk25=Stimulus,S103,40434,1,0
+Mk26=Stimulus,S  6,42481,1,0
+Mk27=Stimulus,S  5,44662,1,0
+Mk28=Stimulus,S 40,45678,1,0
+Mk29=Stimulus,S118,45683,1,0
+Mk30=Stimulus,S  1,45688,1,0
+Mk31=Stimulus,S103,45693,1,0
+Mk32=Stimulus,S  6,47621,1,0
+Mk33=Stimulus,S  5,49809,1,0
+Mk34=Stimulus,S 50,50808,1,0
+Mk35=Stimulus,S237,50813,1,0
+Mk36=Stimulus,S  3,50818,1,0
+Mk37=Stimulus,S101,50823,1,0
+Mk38=Stimulus,S  6,53823,1,0
+Mk39=Stimulus,S  5,56042,1,0
+Mk40=Stimulus,S 40,57129,1,0
+Mk41=Stimulus,S114,57134,1,0
+Mk42=Stimulus,S  3,57140,1,0
+Mk43=Stimulus,S103,57145,1,0
+Mk44=Stimulus,S  6,59661,1,0
