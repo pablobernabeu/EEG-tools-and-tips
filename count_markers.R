@@ -13,6 +13,6 @@ count_markers =
     file = readLines(file)
     
     # Count and print result
-    marker_count = sum(str_detect(file, 'S  2'))
+    marker_count = sum(str_detect(file, marker))
     cat('Count of "', marker, '": ', marker_count, ' instances\n', sep = '')
   }
