@@ -18,10 +18,10 @@
 
 
 # For development purposes, the test mode can be set to 'yes' 
-# below, which will prevent attempting to connect to a port. As 
-# a result, no EEG triggers will be sent to the EEG recorder, and 
-# instead the triggers will be printed in the Python console of 
-# OpenSesame.
+# below, which will prevent attempting to connect to a port. 
+# As a result, no triggers will be sent to the EEG recorder, 
+# and instead, the triggers will be printed in the Python 
+# console of OpenSesame.
 
 var.test_mode = 'no' 
 
