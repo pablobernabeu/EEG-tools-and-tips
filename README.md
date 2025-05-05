@@ -2,6 +2,12 @@
 
 ## Articles
 
+- [Visualising EEG effects with topographic mapping in BrainVision Analyzer](https://www.youtube.com/watch?v=FI9FO7oJj_o)
+
+- [Reducing the impedance in electroencephalography using a blunt needle, electrolyte gel and wiggling](https://pablobernabeu.github.io/2024/lowering-impedance-in-electroencephalography-using-a-blunt-needle-electrolyte-gel-and-wiggling/)
+
+- [A makeshift EEG lab](https://pablobernabeu.github.io/2024/makeshift-eeg-lab/)
+
 - [R functions for checking and fixing vmrk files from BrainVision](https://pablobernabeu.github.io/2024/r-functions-for-checking-and-fixing-vmrk-files-from-brainvision/)
 
 - [Preventing muscle artifacts in electroencephalography sessions](https://pablobernabeu.github.io/2024/preventing-muscle-artifacts-in-electroencephalography-sessions/)
